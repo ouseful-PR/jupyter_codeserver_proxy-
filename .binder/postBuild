@@ -10,6 +10,8 @@ wget -qO- https://github.com/cdr/code-server/releases/download/2.1698/code-serve
 
 export PATH=$CONDA_DIR/code-server:$PATH
 
+# COMMENTED OUT EXTENSIONS CURRENTLY ERROR WHEN TRYING TO LOAD FROM code-server MARKETPLACE
+
 # editor visual aids
 code-server --install-extension CoenraadS.bracket-pair-colorizer-2
 code-server --install-extension oderwat.indent-rainbow
@@ -20,11 +22,11 @@ code-server --install-extension eamodio.gitlens
 code-server --install-extension aaron-bond.better-comments
 code-server --install-extension Gruntfuggly.todo-tree
 code-server --install-extension mikestead.dotenv
-code-server --install-extension streetsidesoftware.code-spell-checker
+#code-server --install-extension streetsidesoftware.code-spell-checker
 
 # code formatting
-code-server --install-extension ms-python.python
-code-server --install-extension VisualStudioExptTeam.vscodeintellicode
+#code-server --install-extension ms-python.python
+#code-server --install-extension VisualStudioExptTeam.vscodeintellicode
 code-server --install-extension TabNine.tabnine-vscode
 code-server --install-extension christian-kohler.path-intellisense
 code-server --install-extension stkb.rewrap
@@ -37,14 +39,14 @@ code-server --install-extension GrapeCity.gc-excelviewer
 
 # remote development tools
 code-server --install-extension ms-azuretools.vscode-docker
-code-server --install-extension ms-vscode-remote.remote-containers
-code-server --install-extension ms-vscode-remote.remote-ssh
-code-server --install-extension ms-vscode-remote.remote-ssh-edit
-code-server --install-extension ms-vscode-remote.remote-wsl
-code-server --install-extension ms-vscode-remote.vscode-remote-extensionpack
+#code-server --install-extension ms-vscode-remote.remote-containers
+#code-server --install-extension ms-vscode-remote.remote-ssh
+#code-server --install-extension ms-vscode-remote.remote-ssh-edit
+#code-server --install-extension ms-vscode-remote.remote-wsl
+#code-server --install-extension ms-vscode-remote.vscode-remote-extensionpack
 
 # tool to save your settings as a gist
 code-server --install-extension Shan.code-settings-sync
 
 #Also add WYSYWYG markdown: https://marketplace.visualstudio.com/items?itemName=ryanmcalister.Unotes
-code-server --install-extension ryanmcalister.Unotes
+#code-server --install-extension ryanmcalister.Unotes
