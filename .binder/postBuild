@@ -3,7 +3,11 @@
 cd $CONDA_DIR
 mkdir $CONDA_DIR/code-server
 cd $CONDA_DIR/code-server
+
+# TO DO - Need a more recent version? Python extension doesn't work?
 wget -qO- https://github.com/cdr/code-server/releases/download/2.1698/code-server2.1698-vsc1.41.1-linux-x86_64.tar.gz | tar zxvf - --strip-components=1
+
+# TO DO - need a JRE (for a linter?)
 
 # VS Code set-up as per RStudio
 #https://stevenmortimer.com/setting-up-vs-code-for-python-development-like-rstudio/
@@ -15,7 +19,7 @@ export PATH=$CONDA_DIR/code-server:$PATH
 # editor visual aids
 code-server --install-extension CoenraadS.bracket-pair-colorizer-2
 code-server --install-extension oderwat.indent-rainbow
-code-server --install-extension gerane.Theme-textmate
+#code-server --install-extension gerane.Theme-textmate
 
 # development aids
 code-server --install-extension eamodio.gitlens
