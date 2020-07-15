@@ -1,4 +1,5 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ouseful-PR/jupyter_codeserver_proxy-/binderised)
+.. image:: https://mybinder.org/badge_logo.svg
+ :target: https://mybinder.org/v2/gh/ouseful-PR/jupyter_codeserver_proxy-/binderised
 
 Add editor into $CONDA_DIR where is should persist.
 
