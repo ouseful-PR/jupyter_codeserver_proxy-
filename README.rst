@@ -5,6 +5,8 @@ Add editor into $CONDA_DIR where is should persist.
 
 VS Code settings set to mimic RStudio as per https://stevenmortimer.com/setting-up-vs-code-for-python-development-like-rstudio/
 
+I havenlt checked to see if setting are picked up; might it be cleanr to put them in `.vscode` anyway and then in the set-up script start the server with a `--user-data-dir ~/.vscode` flag?
+
 =========
 Cloud9 IDE
 =========
