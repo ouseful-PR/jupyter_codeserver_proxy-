@@ -1,0 +1,6 @@
+
+
+cd $CONDA_DIR
+mkdir $CONDA_DIR/code-server
+cd $CONDA_DIR/code-server
+wget -qO- https://github.com/cdr/code-server/releases/download/2.1698/code-server2.1698-vsc1.41.1-linux-x86_64.tar.gz | tar zxvf - --strip-components=1
