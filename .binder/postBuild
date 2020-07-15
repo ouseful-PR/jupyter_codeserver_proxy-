@@ -4,3 +4,47 @@ cd $CONDA_DIR
 mkdir $CONDA_DIR/code-server
 cd $CONDA_DIR/code-server
 wget -qO- https://github.com/cdr/code-server/releases/download/2.1698/code-server2.1698-vsc1.41.1-linux-x86_64.tar.gz | tar zxvf - --strip-components=1
+
+# VS Code set-up as per RStudio
+#https://stevenmortimer.com/setting-up-vs-code-for-python-development-like-rstudio/
+
+export PATH=$CONDA_DIR/code-server:$PATH
+
+# editor visual aids
+code --install-extension CoenraadS.bracket-pair-colorizer-2
+code --install-extension oderwat.indent-rainbow
+code --install-extension gerane.Theme-textmate
+
+# development aids
+code --install-extension eamodio.gitlens
+code --install-extension aaron-bond.better-comments
+code --install-extension Gruntfuggly.todo-tree
+code --install-extension mikestead.dotenv
+code --install-extension streetsidesoftware.code-spell-checker
+
+# code formatting
+code --install-extension ms-python.python
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension TabNine.tabnine-vscode
+code --install-extension christian-kohler.path-intellisense
+code --install-extension stkb.rewrap
+code --install-extension SonarSource.sonarlint-vscode
+
+# file viewer tools
+code --install-extension DotJoshJohnson.xml
+code --install-extension jithurjacob.nbpreviewer
+code --install-extension GrapeCity.gc-excelviewer
+
+# remote development tools
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-vscode-remote.remote-containers
+code --install-extension ms-vscode-remote.remote-ssh
+code --install-extension ms-vscode-remote.remote-ssh-edit
+code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode-remote.vscode-remote-extensionpack
+
+# tool to save your settings as a gist
+code --install-extension Shan.code-settings-sync
+
+#Also add WYSYWYG markdown: https://marketplace.visualstudio.com/items?itemName=ryanmcalister.Unotes
+code --install-extension ryanmcalister.Unotes
