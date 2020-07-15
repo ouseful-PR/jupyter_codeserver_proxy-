@@ -3,7 +3,7 @@
 
 Add editor into $CONDA_DIR where is should persist.
 
-VS COde settings et to mimi RStudio as per https://stevenmortimer.com/setting-up-vs-code-for-python-development-like-rstudio/
+VS Code settings set to mimic RStudio as per https://stevenmortimer.com/setting-up-vs-code-for-python-development-like-rstudio/
 
 =========
 Cloud9 IDE
